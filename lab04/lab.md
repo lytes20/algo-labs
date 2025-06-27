@@ -40,3 +40,12 @@ Answer
 ```
 
 ---
+
+Question 3
+
+R-2.10 Give an example of a worst-case sequence with n elements for insertion-sort runs in Ω(n2) time on such a sequence.
+
+Answer
+
+- The worst case for Insertion Sort occurs when the input array is reverse-sorted.
+  Example array - `[9, 8, 7, 6, 5, 4, 3]`
