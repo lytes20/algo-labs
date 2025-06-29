@@ -49,3 +49,13 @@ Answer
 
 - The worst case for Insertion Sort occurs when the input array is reverse-sorted.
   Example array - `[9, 8, 7, 6, 5, 4, 3]`
+
+---
+
+Question 4
+
+R-2-18 Draw an example of a heap whose keys are all the odd numbers from 1 to 49 (with no repeats), such that the insertion of an item with key 32 would cause up-heap bubbling to proceed all the way up to a child of the root (replacing that child’s key with 32).
+
+Answer
+
+---
