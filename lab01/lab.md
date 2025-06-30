@@ -1,6 +1,17 @@
+Question 1:
+
+R-1.1 Graph the functions `12n`, `6n log n`, `n^2`, `n^3`, and `2^n` using logarithmic scale for the x- and y-axes; that is, if the function value f(n) is y, plot this as a point with x-coordinate at log n and y-coordinate at log y.
+
+Answer:
+
+![](question1/graph.png)
+
+---
+
 Question 2:
 
 R-1.2 Algorithm A uses 10n log n operations, while algorithm B uses n2 operations. Determine the value n0 such that A is better than B for n ≥ n0.
+
 Answer
 
 ```
