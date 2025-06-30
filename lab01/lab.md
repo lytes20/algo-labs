@@ -11,25 +11,22 @@ n >= 11
 
 Question 3:
 
-R-1.6 Order the following list of functions by the big-O notation. n log n log log n 5n n3 2n log2 n n2 log n 1/n 2n 4log n 4n3/2 4n √n
+R-1.6 Order the following list of functions by the big-O notation. `nlogn` `loglogn` `5n` `n^3` `2n(log^2)n` `(n^2)logn` `1/n` `2^n` `4^(logn)` `4n^(3/2)` `4^n` `√n`
 
 Answer:
 
-```
-1. 1/n
-2. √n
-3. n log n
-4. log log n
-5. 5n
-6. n3
-7. 2n log n
-8. n2 log n
-9. 2n
-10. 4log n
-11. 4n3/2
-12. 4n
-
-```
+1. `1/n`
+2. `√n`
+3. `nlogn`
+4. `loglogn`
+5. `5n`
+6. `n^3`
+7. `2n(log^2)n`
+8. `(n^2)logn`
+9. `2^n`
+10. `4^(logn)`
+11. `4n^(3/2)`
+12. `4^n`
 
 ---
 
