@@ -6,8 +6,7 @@ function merge(arr1, arr2) {
     if (arr1[i] < arr2[j]) {
       result.push(arr1[i]);
       i++;
-    }
-    if (arr1[j] < arr2[i]) {
+    } else {
       result.push(arr2[j]);
       j++;
     }
@@ -25,4 +24,12 @@ function merge(arr1, arr2) {
 
   return result;
 }
-function mergeSort(arr) {}
+function mergeSort(arr) {
+  if (arr.length <= 1) return arr;
+  let mid = Math.floor(arr.length / 2);
+  let left = mergeSort(arr.slice(0, mid));
+  let right = mergeSort(arr.slice(mid));
+  return merge(left, right);
+}
+const result = mergeSort([5, 3, 8, 4, 2]);
+console.log("result", result);
