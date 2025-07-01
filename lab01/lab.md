@@ -83,7 +83,7 @@ Answer:
 Algorithm
 SegmentSums(arr, (low1,high1), (low2,high2))
 Input: arr, An array of integers
-Output: Returns an odd perfect number
+Output: Returns the sums of the elements in the specified two segments of the array
 
 sum1 := 0
 sum2 := 0
