@@ -1,3 +1,5 @@
+## Lab 02
+
 Question 1:
 
 C-2.1 Describe, in pseudo-code, a link-hopping method for finding the middle node of a doubly linked list with header and trailer sentinels, and an odd number of real nodes between them. (Note: This method can only use link-hopping, i.e., the methods before and after; it cannot use a counter.) What is the running time of this method?
@@ -9,14 +11,42 @@ Answer:
 findMiddleNode(L)
 if L.isEmpty() then
     return null
-first = L.first()
-last = L.last()
+first <- L.first()
+last <- L.last()
 while L.after(first) is not equal to L.before(last) do
-    first = L.after(first)
-    last = L.before(last)
+    first <- L.after(first)
+    last <- L.before(last)
 return L.after(first)
 
 ```
+
+---
+
+**Question 2:**
+
+C-2.2 Describe, in pseudo-code, how to implement the queue ADT using two stacks. What is the running time of the enqueue() and dequeue() methods in this case?
+
+**Answer:**
+
+```pseudo
+enqueueStack <- new Stack
+dequeueStack <- new Stack
+
+enqueue(o)
+    enqueueStack.push(o)
+
+dequeue()
+    if dequeueStack.isEmpty() then
+        while !enqueueStack.isEmpty() do
+            temp <- dequeueStack.pop()
+            dequeueStack.push(temp)
+       dequeueStack.pop()
+    else
+        dequeueStack.pop()
+```
+
+- Running time of enqueue() is O(1)
+- Running time of dequeue is O(n)
 
 ---
 
